@@ -16,7 +16,7 @@ function calculateDays() {
     
     // Calculate the difference in days
     const timeDifference = inputDate - startDate;
-    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
+    const daysDifference = (Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1) * 2;
     
     // Display the result
     result.textContent = `numbers of songs, including today: ${daysDifference}`;
