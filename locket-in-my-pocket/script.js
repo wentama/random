@@ -10,7 +10,7 @@ function calculateDays() {
     
     // Check if the input date is valid
     if (isNaN(inputDate.getTime())) {
-        result.textContent = "Please enter a valid date in mm-dd-yyyy format.";
+        result.textContent = "enter in mm-dd-yyyy format :0";
         return;
     }
     
@@ -19,5 +19,5 @@ function calculateDays() {
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
     
     // Display the result
-    result.textContent = `Number of days since 05-20-2024: ${daysDifference}`;
+    result.textContent = `numbers of songs, including today: ${daysDifference}`;
 }

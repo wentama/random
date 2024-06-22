@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Days Since 05-20-2024 Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fun Things!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .project {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .project h2 {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Days Since 05-20-2024</h1>
-        <label for="dateInput">Enter a date (mm-dd-yyyy):</label>
-        <input type="text" id="dateInput" placeholder="mm-dd-yyyy">
-        <button onclick="calculateDays()">Calculate</button>
-        <p id="result"></p>
+    <h1>My Projects</h1>
+    <div class="project">
+        <a href="locket-in-my-pocket/index.html">
+            <img src="images/boba.jpg" alt="locket in my pocket">
+            <h2>Project 1</h2>
+        </a>
     </div>
-    <script src="script.js"></script>
+    <!-- <div class="project">
+        <a href="project2/index.html">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h2>Project 2</h2>
+        </a>
+    </div> -->
 </body>
 </html>
