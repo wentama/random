@@ -6,7 +6,7 @@ function calculateDays() {
     const inputDate = new Date(dateInput);
     
     // Define the starting date
-    const startDate = new Date('05-20-2024');
+    const startDate = new Date('05/20/2024');
     
     // Check if the input date is valid
     if (isNaN(inputDate.getTime())) {
