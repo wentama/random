@@ -10,7 +10,7 @@ function calculateDays() {
     
     // Check if the input date is valid
     if (isNaN(inputDate.getTime())) {
-        result.textContent = "enter in mm-dd-yyyy format :0";
+        result.textContent = "enter a valid date";
         return;
     }
     
