@@ -9,10 +9,19 @@
   <body>
     <div class="container">
       <h1>numbers of songs till</h1>
-      <label for="dateInput">enter a date (mm/dd/yyyy):</label>
-      <input type="text" id="dateInput" placeholder="mm/dd/yyyy" />
-      <button onclick="calculateDays()">Calculate</button>
+      <p id="dateDisplay"></p>
       <p id="result"></p>
+      <div class="button-container" id="selectDateButtonContainer">
+        <button id="selectDateButton" onclick="showDateInput()">
+          Select a Different Date
+        </button>
+      </div>
+      <div id="dateInputContainer" style="display: none">
+        <label for="dateInput">enter a date (mm/dd/yyyy):</label>
+        <input type="text" id="dateInput" placeholder="mm/dd/yyyy" />
+        <button onclick="calculateDays(true)">Calculate</button>
+        <button onclick="returnToCurrentDate()">Return to Current Date</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
